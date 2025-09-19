@@ -1,0 +1,11 @@
+[
+  {
+    "Name": "Novo Perfil",
+    "Projects": [
+      {
+        "Path": "MedicalSystem.API\\MedicalSystem.API.csproj",
+        "Action": "Start"
+      }
+    ]
+  }
+]

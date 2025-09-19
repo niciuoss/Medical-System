@@ -1,0 +1,22 @@
+version: '3.8'
+
+services:
+  postgres-dev:
+    image: postgres:15
+    environment:
+      POSTGRES_DB: medical_system_dev
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+    ports:
+      - "5438:5432"
+    volumes:
+      - postgres_dev_data:/var/lib/postgresql/data
+    networks:
+      - medical_dev_network
+
+volumes:
+  postgres_dev_data:
+
+networks:
+  medical_dev_network:
+    driver: bridge

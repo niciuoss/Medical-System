@@ -1,0 +1,7 @@
+node_modules/
+bin/
+obj/
+.env
+logs/
+# Visual Studio
+.vs/
